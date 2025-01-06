@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background: url('display.webp') no-repeat center center fixed;
+    background-size: cover;
+    font-size: 1rem;
+}
+
+.header {
+    background: #110557;
+    opacity: 0.8;
+    color: white;
+    padding: 10px 0;
+}
+
+
+nav {
+    font-size: 0.9rem;
+    display: flex;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #a9cfff;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.transparent-block {
+    background: rgba(96, 139, 193, 0.5);
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#features {
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    /* Use flexbox to arrange cards */
+    justify-content: center;
+    /* Center the cards */
+    flex-wrap: wrap;
+    /* Allow wrapping to the next line */
+}
+
+.feature-block {
+    background: rgba(203, 220, 235, 0.7);
+    color: #0056b3;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    /* Space between cards */
+    width: 200px;
+    /* Fixed width for square shape */
+    height: 200px;
+    /* Fixed height for square shape */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition */
+    cursor: pointer;
+    position: relative;
+    /* For positioning the info */
+    display: flex;
+    /* Use flexbox for inner content */
+    flex-direction: column;
+    /* Stack content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    justify-content: center;
+    /* Center content vertically */
+}
+
+.feature-block:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Add shadow on hover */
+}
+
+.info {
+    display: none;
+    /* Initially hide the info */
+    position: absolute;
+    /* Position it absolutely within the block */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Adjust for centering */
+    background: #ffff;
+    /* Dark background for contrast */
+    color: #0056b3;
+    /* White text for readability */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+    height: 180px;
+    width: 180px;
+    /* Ensure it appears above other content */
+}
+
+.feature-block:hover .info {
+    display: block;
+    /* Show info on hover */
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 10px;
+    background: rgba(203, 220, 235, 0.7);
+    border-radius: 8px;
+    color: #0056b3;
+}
+
+ol {
+    padding: 0 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #608BC1;
+}
+
+a {
+    color: #f2f2f2;
+}
+
+.faq {
+    margin: 10px 0;
+}
+
+.footer {
+    background: #133E87;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    font-size: 10px;
+}
+
+
+button {
+    background-color: #75b6f8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #63acfa;
+}
+
+#how-it-works {
+   text-align: center;
+   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    align-items: baseline;
+}
+
+form label {
+    margin: 5px 40px 10px;
+    color: #ffffff;
+}
+
+form label:hover {
+    margin: 5px 40px 10px;
+    color: #5575e0;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin: 0 100px 0 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #000;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e67e22;
+    color: #050505;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #d35400;
+}
